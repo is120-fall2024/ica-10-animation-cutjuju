@@ -1,1 +1,152 @@
 /* EDIT THESE STYLES FOR YOUR TASKS */
+nav img {
+    margin-top: 10px;
+    aspect-ratio: 1 / 1;
+    flex: 0 0 auto;
+    transition: all 0.8s ease;
+  }
+nav img:hover {
+    cursor: pointer;
+    transform: scale(1.1) translate(5px, 4px) rotate(-15deg);
+  }
+
+
+  span.hline { 
+    font-weight: bold; 
+}
+
+.box.box-3{
+font-size:22px;
+place-items:center;
+align-items: center;
+text-align: center;
+padding:12px;
+
+
+
+}
+
+span.hline:hover { 
+    text-decoration-color: red;
+    text-decoration-line: underline;
+    text-underline-offset: 0.4em;
+    transition-behavior: normal;
+    transition: background-size: ease-in-out;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+
+}
+
+
+
+
+
+
+.box.box-2{
+text-align: center;
+padding:35%;
+font-size: 25px;
+background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+
+.box.box-2:hover{
+animation:color-change 2s infinite linear;
+
+}
+
+@keyframes color-change {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+
+
+.spinner {
+  animation: spin 8s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(360deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(720deg);
+  }
+
+}
+
+
+aside {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 20px;
+  height: 15em;
+  aspect-ratio: 3 / 2;
+  background-color: #333;
+  color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  animation-name: notification;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: 5s;
+}
+
+aside span {
+  font-size: 2em;
+}
+@keyframes notification {
+  0% {
+    transform: translateX(22.5em);
+  }
+  20% {
+    transform: translateX(0);
+  }
+  80% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(22.5em);
+  }
+}
+
+
+
+
+.box.box-4{
+  grid-row: 2;
+  grid-column:1;
+  background-color:blue;
+  color:#f4f4f4;
+  display:grid;
+  place-items:center;
+  font-size:2em;
+  animation: task-roller 5s infinite linear;
+}
+
+@keyframes task-roller {
+  0% { grid-column: 1; }
+  33% { grid-column: 2; }
+  67% { grid-column: 3; }
+  100% { grid-column: 1; }
+}
